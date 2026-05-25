@@ -1,0 +1,12 @@
+.topic-navigation .timeline-footer-controls {
+  flex-direction: row-reverse;
+}
+
+#topic-footer-buttons {
+  flex-direction: row-reverse;
+  gap: 0.5rem !important;
+}
+
+#topic-footer-buttons button[data-identifier="bookmark-menu"] {
+  display: none;
+}
