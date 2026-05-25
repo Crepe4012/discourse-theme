@@ -1,0 +1,33 @@
+@use "lib/viewport";
+
+.d-header {
+  .title {
+    margin-left: var(--base-font-size-smaller);
+
+    @include viewport.from(md) {
+      margin-left: calc(var(--space-1) + var(--space-half));
+    }
+  }
+
+  @include viewport.from(md) {
+    .header-sidebar-toggle {
+      display: none !important;
+      margin-left: 0 !important;
+    }
+
+    .home-logo-wrapper-outlet {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.uc-modernize-foundation-theme .d-header {
+  height: 64px !important;
+  .title {
+    --d-logo-height: 2.66rem !important;
+  }
+}
+
+#header-search-input {
+  box-shadow: none;
+}

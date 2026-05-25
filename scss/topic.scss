@@ -6,7 +6,8 @@
 
 .post-stream {
   .contents {
-    font-size: var(--font-up-1);
+    //font-size: var(--font-up-1);
+    font-size: var(--font-0);
     line-height: 1.25;
     -webkit-font-smoothing: antialiased;
   }
@@ -24,7 +25,8 @@
 
       .timeline-replies,
       .timeline-ago {
-        line-height: 1;
+        //line-height: 1;
+        line-height: 1.5;
       }
     }
 
@@ -100,7 +102,8 @@ body:not(.d-toc-installed) {
   .more-topics__list
   .topic-list-body
   .topic-list-item:last-of-type {
-  border-bottom: 1px solid var(--primary-300);
+  //border-bottom: 1px solid var(--primary-300);
+  border-bottom: 1px solid var(--primary-400);
 }
 
 .discourse-post-event .discourse-post-event-widget {

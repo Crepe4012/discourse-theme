@@ -1,0 +1,15 @@
+.list-controls {
+  .navigation-container {
+    .category-breadcrumb {
+      text-transform: capitalize;
+
+      .category-breadcrumb__category-selector {
+        display: none;
+      }
+    }
+  }
+
+  .combo-box .combo-box-header {
+    box-shadow: 0 1px 3px oklch(from var(--primary) l c h / 0.06);
+  }
+}

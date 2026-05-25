@@ -1,49 +1,56 @@
 @use "lib/viewport";
 
 :root {
-  --d-button-border-radius: 6.25rem;
+  //--d-button-border-radius: 6.25rem;
+  --d-button-border-radius: var(--d-border-radius);
 }
 
 .discourse-no-touch .topic-body .actions .fade-out {
   transition: none;
 }
 
-.sidebar-new-topic-button__wrapper {
-  &:has(.fk-d-tooltip__trigger) {
-    #create-topic.btn {
-      border-radius: var(--d-button-border-radius) 0 0
-        var(--d-button-border-radius);
-    }
-  }
-}
+//.sidebar-new-topic-button__wrapper {
+//  &:has(.fk-d-tooltip__trigger) {
+//    #create-topic.btn {
+//      border-radius: var(--d-button-border-radius) 0 0
+//        var(--d-button-border-radius);
+//    }
+//  }
+//}
 
-.discourse-no-touch .btn-default.sidebar-new-topic-button,
+//.discourse-no-touch .btn-default.sidebar-new-topic-button,
 .discourse-no-touch .btn-default,
 .discourse-no-touch .select-kit .select-kit-header.btn-default {
-  background: var(--primary-100);
+  //background: var(--primary-100);
+  background: var(--secondary);
 
   .d-icon {
-    color: var(--accent-color);
+    //color: var(--accent-color);
+    color: var(--primary);
   }
 
   &:focus-visible,
   &:hover {
-    background: var(--primary-100);
+    //background: var(--primary-100);
+    background-color: var(--d-hover);
     color: var(--primary);
-    box-shadow: 0 0 0 4px var(--button-box-shadow);
+    //box-shadow: 0 0 0 4px var(--button-box-shadow);
 
     .d-icon {
-      color: var(--accent-color);
+      //color: var(--accent-color);
+      color: var(--primary);
     }
   }
 
   &:active:not(:hover, :focus) {
     color: var(--primary);
-    background: var(--tertiary-300);
+    //background: var(--tertiary-300);
+    background: var(--secondary);
     background-image: none;
 
     .d-icon {
-      color: var(--tertiary-high);
+      //color: var(--tertiary-high);
+      color: var(--primary);
     }
   }
 }
@@ -60,8 +67,9 @@
   &:not([disabled]):focus-visible,
   &:not([disabled]):hover {
     .discourse-no-touch & {
-      background-color: var(--accent-color);
-      box-shadow: 0 0 0 4px var(--button-box-shadow);
+      //background-color: var(--accent-color);
+      background-color: var(--tertiary-hover);
+      //box-shadow: 0 0 0 4px var(--button-box-shadow);
       color: var(--accent-text-color);
 
       .d-icon {
@@ -86,8 +94,9 @@
   .discourse-no-touch & {
     &:not([disabled]):focus-visible,
     &:not([disabled]):hover {
-      background-color: var(--danger);
-      box-shadow: 0 0 0 4px var(--d-button-danger-bg-color--hover);
+      //background-color: var(--danger);
+      background-color: oklch(from var(--danger) l c h / 0.75);
+      //box-shadow: 0 0 0 4px var(--d-button-danger-bg-color--hover);
     }
   }
 }
@@ -106,12 +115,12 @@
 
 .d-combo-button:hover {
   border-radius: var(--d-button-border-radius);
-  box-shadow: 0 0 0 4px var(--button-box-shadow);
+  //box-shadow: 0 0 0 4px var(--button-box-shadow);
 
-  button:hover {
-    // remove duplicate shadow from child button
-    box-shadow: none;
-  }
+  //button:hover {
+  //  // remove duplicate shadow from child button
+  //  box-shadow: none;
+  //}
 }
 
 // Solved

@@ -1,0 +1,12 @@
+#user-menu-button-bookmarks,
+#user-menu-button-likes,
+#user-menu-button-messages,
+#user-menu-button-other-notifications,
+#user-menu-button-replies {
+  display: none !important;
+}
+
+div[data-setting-name="user-associated-accounts"],
+div[data-setting-name="user-data-export"] {
+  display: none;
+}

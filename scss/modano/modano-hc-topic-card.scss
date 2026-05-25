@@ -1,0 +1,11 @@
+.hc-topic-card {
+  &__status {
+    &.--solved {
+      background-color: #dcfce7;
+    }
+
+    &.--hot {
+      background-color: var(--danger);
+    }
+  }
+}

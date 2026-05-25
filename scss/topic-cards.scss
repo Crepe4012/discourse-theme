@@ -4,7 +4,8 @@
   --d-border-radius-small: calc(var(--d-border-radius) * 0.5);
   --topic-list-item-background-color: var(--d-content-background);
   --topic-list-item-background-color--visited: var(--d-content-background);
-  --topic-card-shadow: rgb(var(--tertiary-rgb), 0.1);
+  //--topic-card-shadow: rgb(var(--tertiary-rgb), 0.1);
+  --topic-card-shadow: oklch(from var(--primary) l c h / 0.06);
 }
 
 .badge-category__wrapper {
@@ -27,11 +28,12 @@
 }
 
 .topic-list > .topic-list-body > .topic-list-item.last-visit {
-  border-bottom: 1px solid var(--primary-300);
+  //border-bottom: 1px solid var(--primary-300);
+  border-bottom: 1px solid var(--primary-low);
 
-  &:hover {
-    border-color: var(--accent-color);
-  }
+  //&:hover {
+  //  border-color: var(--accent-color);
+  //}
 }
 
 .topic-list,
@@ -91,7 +93,8 @@
   position: relative;
   text-overflow: ellipsis;
   padding: var(--space-3);
-  border: 1px solid var(--primary-300);
+  //border: 1px solid var(--primary-300);
+  border: 1px solid var(--primary-400);
   display: grid;
   grid-template-columns: min-content min-content min-content auto min-content;
   grid-template-areas:
@@ -164,10 +167,10 @@
     }
   }
 
-  &.selected {
-    border: 1px solid var(--accent-color);
-    box-shadow: 0 0 12px 1px var(--topic-card-shadow);
-  }
+  //&.selected {
+  //  border: 1px solid var(--accent-color);
+  //  box-shadow: 0 0 12px 1px var(--topic-card-shadow);
+  //}
 
   &.excerpt-expanded {
     @include viewport.until(sm) {
@@ -394,17 +397,6 @@
         display: none;
       }
     }
-  }
-
-  .link-top-line .event-date {
-    margin-left: 0.5em;
-    font-size: var(--font-down-3);
-    white-space: nowrap;
-  }
-
-  .link-top-line .event-date-container {
-    top: -0.15rem;
-    line-height: normal;
   }
 
   .topic-list-data {
@@ -641,13 +633,25 @@
   }
 }
 
+// for both types of context cards
+.topic-list.--d-topic-cards {
+  .event-date {
+    margin-left: var(--space-2);
+    font-size: var(--font-down-3);
+    white-space: nowrap;
+    font-weight: normal;
+  }
+
+  .event-date-container {
+    display: inline-flex;
+    position: relative;
+    top: -0.15rem;
+    line-height: normal;
+  }
+}
+
 // bulk-select overrule for j/k nav
 .topic-list tr.selected td:first-of-type,
 .topic-list-item.selected td:first-of-type {
   box-shadow: none;
-}
-
-.event-date-container {
-  display: inline-flex;
-  position: relative;
 }

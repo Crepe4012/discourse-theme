@@ -32,13 +32,13 @@
   background-color: var(--d-content-background);
 }
 
-.select-kit.combo-box .select-kit-header,
-.select-kit.multi-select .multi-select-header,
-.d-editor-textarea-wrapper,
-.fk-d-menu__inner-content,
-.menu-panel {
-  background-color: var(--d-content-background);
-}
+//.select-kit.combo-box .select-kit-header,
+//.select-kit.multi-select .multi-select-header,
+//.d-editor-textarea-wrapper,
+//.fk-d-menu__inner-content,
+//.menu-panel {
+//  background-color: var(--d-sidebar-background);
+//}
 
 .d-editor-textarea-wrapper.in-focus,
 input[type="text"]:focus,
@@ -57,8 +57,10 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .select-kit.multi-select.is-expanded .multi-select-header,
 .select-kit.multi-select .multi-select-header:focus {
-  border-color: var(--accent-color);
-  outline: 2px solid var(--accent-color);
+  //border-color: var(--accent-color);
+  border-color: var(--primary-400);
+  //outline: 2px solid var(--accent-color);
+  outline: none !important;
 }
 
 #reply-control {

@@ -1,0 +1,11 @@
+:root {
+  --topic-body-width: calc(
+    var(--d-max-width) - var(--topic-body-width-padding) *
+      2 - var(--topic-avatar-width) - var(--space-6) * 2
+  );
+  --topic-width: var(--d-max-width);
+}
+
+#topic-footer-buttons button[data-identifier="bookmark-menu"] {
+  display: none;
+}

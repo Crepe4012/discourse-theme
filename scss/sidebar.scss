@@ -10,10 +10,12 @@ body.has-full-page-chat .sidebar-wrapper,
 .sidebar-wrapper,
 .sidebar-hamburger-dropdown {
   @include viewport.until(lg) {
-    background: var(--secondary);
+    //background: var(--secondary);
+    background: var(--d-sidebar-background);
 
     .sidebar-footer-wrapper {
-      background: var(--secondary);
+      //background: var(--secondary);
+      background: var(--d-sidebar-background);
 
       .sidebar-footer-container::before {
         display: none;
@@ -40,12 +42,12 @@ body.has-full-page-chat .sidebar-wrapper,
   }
 }
 
-.sidebar-hamburger-dropdown {
-  .sidebar-new-topic-button__wrapper {
-    width: 100%;
-    margin: 0 0 var(--space-2);
-  }
-}
+//.sidebar-hamburger-dropdown {
+//  .sidebar-new-topic-button__wrapper {
+//    width: 100%;
+//    margin: 0 0 var(--space-2);
+//  }
+//}
 
 .sidebar-section-wrapper {
   --d-sidebar-section-border-color: var(--d-sidebar-border-color);
@@ -82,17 +84,18 @@ body.has-full-page-chat .sidebar-wrapper,
 .sidebar-section-link-wrapper .sidebar-section-link:focus,
 .sidebar-section-link-wrapper .sidebar-section-link:hover {
   .d-icon {
-    color: var(--primary);
+    //color: var(--primary);
+    color: inherit;
   }
 }
 
-.sidebar-new-topic-button__wrapper {
-  margin: 0 var(--space-2) var(--space-4) var(--space-4);
-
-  .sidebar-new-topic-button .d-icon {
-    display: none;
-  }
-}
+//.sidebar-new-topic-button__wrapper {
+//  margin: 0 var(--space-2) var(--space-4) var(--space-4);
+//
+//  .sidebar-new-topic-button .d-icon {
+//    display: none;
+//  }
+//}
 
 // put the draft menu above the slide-out hamburger on small desktop screens
 @include viewport.until(md) {
@@ -104,7 +107,8 @@ body.has-full-page-chat .sidebar-wrapper,
 }
 
 .admin-area .sidebar-wrapper .admin-panel {
-  --d-sidebar-highlight-background: var(--d-selected);
+  //--d-sidebar-highlight-background: var(--d-selected);
+  --d-sidebar-highlight-background: transparent;
   --d-sidebar-link-icon-color: var(--d-sidebar-link-color);
 }
 

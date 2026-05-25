@@ -1,0 +1,81 @@
+:root {
+  --d-sidebar-vertical-gap: var(--space-1) !important;
+  --d-sidebar-width: 17rem !important;
+
+  @media (width >= 768px) {
+    --d-wrap-padding-x: 0 !important;
+  }
+}
+
+.sidebar-hamburger-dropdown,
+.sidebar-wrapper {
+  .add-section {
+    display: none;
+  }
+
+  .sidebar-sections {
+    padding-block: var(--sidebar-section-wrapper-padding) !important;
+    padding-inline: var(--space-3);
+  }
+
+  .sidebar-section-link-prefix .svg-icon {
+    height: 1.571em !important;
+    width: 1.571em !important;
+  }
+
+  .sidebar-section-wrapper .sidebar-section-header {
+    padding-left: 0 !important;
+  }
+
+  .sidebar-section-wrapper[data-section-name="tags"] {
+    display: none !important;
+  }
+
+  .sidebar-section-link-wrapper[data-list-item-name="all-categories"] {
+    order: -1;
+    font-size: var(--font-0) !important;
+  }
+
+  #sidebar-section-content-external {
+    .sidebar-section-link-content-text::after {
+      background-color: var(--primary-400);
+      content: "" / "(external link)";
+      display: inline-block;
+      mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>');
+      mask-size: auto;
+      mask-size: cover;
+      height: 0.8em;
+      width: 0.8em;
+      margin-inline: var(--space-1);
+    }
+  }
+}
+
+.admin-area .sidebar-wrapper .admin-panel {
+  --d-sidebar-highlight-hover-background: transparent !important;
+  --d-sidebar-active-background: transparent !important;
+  --d-sidebar-link-color: var(--primary);
+}
+
+.uc-modernize-foundation-theme {
+  --sidebar-section-wrapper-padding: 0 var(--space-2) !important;
+}
+
+.menu-panel {
+  padding-inline: 0 !important;
+  padding-block: 0.5em !important;
+}
+
+@media (width >= 40rem) {
+  .hamburger-panel .revamped {
+    --d-sidebar-row-height: unset !important;
+
+    .sidebar-section-wrapper.sidebar-section .sidebar-section-header-wrapper {
+      margin: unset !important;
+    }
+
+    .sidebar-footer-wrapper .sidebar-footer-container {
+      background: var(--d-sidebar-background) !important;
+    }
+  }
+}

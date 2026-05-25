@@ -1,0 +1,24 @@
+:root {
+  --reply-composer-height: 75vh;
+  --new-topic-composer-height: 75vh;
+}
+
+#reply-control {
+  .submit-panel,
+  .save-or-cancel {
+    flex-direction: row-reverse;
+  }
+}
+
+#reply-control.draft {
+  color: var(--accent-text-color) !important;
+
+  .composer-controls .d-icon {
+    color: var(--accent-text-color) !important;
+  }
+}
+
+#reply-control .saving-text .d-icon,
+#reply-control .draft-text .d-icon {
+  color: var(--accent-text-color) !important;
+}

@@ -1,0 +1,33 @@
+.sidebar__edit-navigation-menu__footer,
+.dialog-footer,
+.d-modal__footer {
+  flex-direction: row-reverse;
+
+  .primary-actions {
+    flex-direction: row-reverse;
+  }
+}
+
+.sidebar-section-form-modal .d-modal__footer {
+  display: flex !important;
+
+  #delete-section {
+    margin-right: auto;
+  }
+}
+
+.link-share-actions {
+  flex-direction: row-reverse;
+}
+
+.btn-insert-table {
+  color: var(--accent-text-color) !important;
+
+  .d-icon {
+    color: inherit !important;
+  }
+}
+
+.dialog-content {
+  border-radius: var(--d-border-radius);
+}

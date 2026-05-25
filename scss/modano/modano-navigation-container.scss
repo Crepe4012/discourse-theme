@@ -1,0 +1,21 @@
+@use "lib/viewport";
+
+.navigation-container {
+  @include viewport.until(sm) {
+    flex-wrap: nowrap !important;
+
+    .category-breadcrumb.hidden,
+    .category-breadcrumb,
+    #navigation-bar {
+      flex-wrap: nowrap !important;
+    }
+  }
+
+  .navigation-controls {
+    order: 2;
+
+    @include viewport.until(sm) {
+      flex-wrap: nowrap !important;
+    }
+  }
+}
