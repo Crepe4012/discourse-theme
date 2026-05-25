@@ -15,12 +15,30 @@
 @import "nav-pills";
 @import "welcome-banner";
 @import "sidebar";
-@import "sidebar-new-topic-button";
 @import "topic";
 @import "topic-cards";
 @import "topic-voting";
 @import "high-context-cards";
 @import "variables";
+
+@import "modano/modano-buttons";
+@import "modano/modano-composer";
+@import "modano/modano-fonts";
+@import "modano/modano-hc-topic-card";
+@import "modano/modano-header";
+@import "modano/modano-input";
+@import "modano/modano-likes";
+@import "modano/modano-list-controls";
+@import "modano/modano-modal";
+@import "modano/modano-navigation-controls";
+@import "modano/modano-pin";
+@import "modano/modano-reply-details";
+@import "modano/modano-select-kit";
+@import "modano/modano-sidebar";
+@import "modano/modano-solved";
+@import "modano/modano-toasts";
+@import "modano/modano-user-menu";
+@import "modano/modano";
 
 :root {
   --d-nav-pill-border-radius: 0;

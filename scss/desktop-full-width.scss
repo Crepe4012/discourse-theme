@@ -136,7 +136,10 @@ $sidebar-width: 17em;
             auto;
         }
 
-        @media screen and (width <= 1000px) {
+        //@media screen and (width <= 1000px) {
+        //  gap: 0.5em;
+        //}
+        @media screen and (width <= var(--d-max-width)) {
           gap: 0.5em;
         }
 

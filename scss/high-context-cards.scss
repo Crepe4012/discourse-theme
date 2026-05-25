@@ -3,8 +3,10 @@
 $padding-pills-small: var(--space-half) var(--space-2);
 
 .topic-list-body:has(.--high-context) {
-  --title-color--read: var(--primary-700);
-  --topic-title-font-weight--visited: 600;
+  //--title-color--read: var(--primary-700);
+  --title-color--read: var(--primary);
+  //--topic-title-font-weight--visited: 600;
+  --topic-title-font-weight--visited: 700;
 
   @include viewport.from(sm) {
     gap: var(--space-4);
@@ -25,12 +27,13 @@ $padding-pills-small: var(--space-half) var(--space-2);
   }
 
   &.bulk-selected {
-    background: var(--tertiary-low);
+    //background: var(--tertiary-low);
+    background: var(--secondary);
     border-color: var(--tertiary);
 
-    &:hover {
-      background: var(--tertiary-medium);
-    }
+    //&:hover {
+    //  background: var(--tertiary-medium);
+    //}
   }
 
   @include viewport.from(sm) {
@@ -43,7 +46,7 @@ $padding-pills-small: var(--space-half) var(--space-2);
   }
 
   &.selected {
-    border-color: var(--accent-color);
+    //border-color: var(--accent-color);
     box-shadow: 0 0 12px 1px var(--topic-card-shadow);
   }
 
@@ -130,7 +133,8 @@ $padding-pills-small: var(--space-half) var(--space-2);
     &.--solved {
       color: var(--success);
       font-weight: 700;
-      border-color: var(--success);
+      //border-color: var(--success);
+      border-color: transparent;
     }
 
     &.--pinned {
@@ -138,8 +142,10 @@ $padding-pills-small: var(--space-half) var(--space-2);
     }
 
     &.--hot {
-      border: 1px solid var(--danger);
-      color: var(--danger);
+      //border: 1px solid var(--danger);
+      border-color: transparent;
+      //color: var(--danger);
+      color: white;
     }
   }
 
@@ -209,8 +215,10 @@ $padding-pills-small: var(--space-half) var(--space-2);
     overflow-wrap: anywhere;
 
     .--high-context & {
-      color: var(--primary-high);
-      line-height: 1.25;
+      //color: var(--primary-high);
+      color: var(--primary);
+      //line-height: 1.25;
+      line-height: 1.5;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -252,7 +260,8 @@ $padding-pills-small: var(--space-half) var(--space-2);
       border-radius: var(--d-border-radius-small);
       border: 1px solid var(--primary-low);
       background: var(--secondary);
-      color: var(--primary-high);
+      //color: var(--primary-high);
+      color: var(--primary);
       white-space: nowrap;
       font-size: var(--font-down-2-rem);
 

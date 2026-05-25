@@ -1,0 +1,13 @@
+.select-kit.combo-box .select-kit-header,
+.select-kit.multi-select .multi-select-header {
+  box-shadow: 0 1px 3px oklab(0% 0 0 / 0.05);
+  border-color: var(--primary-400) !important;
+
+  &:active {
+    border-color: var(--primary-400) !important;
+  }
+
+  &:focus {
+    border-color: var(--primary-400) !important;
+  }
+}

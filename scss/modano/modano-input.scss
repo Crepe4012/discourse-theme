@@ -1,0 +1,27 @@
+input {
+  box-shadow: 0 1px 3px oklab(0% 0 0 / 0.05);
+}
+
+.d-date-input .date-picker {
+  box-shadow: 0 1px 3px oklab(0% 0 0 / 0.05) !important;
+}
+
+.d-editor-textarea-wrapper.in-focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.select-kit.multi-select.is-expanded .multi-select-header,
+.select-kit.multi-select .multi-select-header:focus {
+  background-color: var(--secondary);
+}

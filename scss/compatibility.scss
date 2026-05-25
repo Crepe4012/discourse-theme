@@ -43,7 +43,8 @@
     div[class^="category-title-header"] {
       width: calc(100% - (2 * var(--space-4)));
       border-radius: var(--d-border-radius-large);
-      max-width: calc(1000px - 3rem) !important;
+      //max-width: calc(1000px - 3rem) !important;
+      max-width: calc(var(--d-max-width) - 3rem) !important;
     }
 
     .list-container div[class^="category-title-header"] {

@@ -37,7 +37,8 @@
 .d-editor-textarea-wrapper,
 .fk-d-menu__inner-content,
 .menu-panel {
-  background-color: var(--d-content-background);
+  //background-color: var(--d-content-background);
+  background-color: var(--d-content-background) !important;
 }
 
 .d-editor-textarea-wrapper.in-focus,
@@ -57,8 +58,10 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 .select-kit.multi-select.is-expanded .multi-select-header,
 .select-kit.multi-select .multi-select-header:focus {
-  border-color: var(--accent-color);
-  outline: 2px solid var(--accent-color);
+  //border-color: var(--accent-color);
+  border-color: var(--primary-400);
+  //outline: 2px solid var(--accent-color);
+  outline: none !important;
 }
 
 #reply-control {

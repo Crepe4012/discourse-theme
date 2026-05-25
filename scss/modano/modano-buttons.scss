@@ -1,0 +1,53 @@
+.btn {
+  padding-inline: var(--space-3) !important;
+  padding-block: var(--space-2) !important;
+  border-radius: var(--d-button-border-radius);
+
+  .svg-icon {
+    height: 1.143em !important;
+    width: 1.143em !important;
+  }
+
+  &:not(.btn-icon) {
+    gap: var(--space-2) !important;
+
+    .d-icon {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.btn-transparent:hover {
+  &:not(.sidebar-section-header) {
+    background-color: oklch(0 0 0 / 0.0599) !important;
+    color: var(--primary) !important;
+  }
+}
+
+.d-icon-d-watching,
+.d-icon-d-tracking {
+  color: var(--primary) !important;
+}
+
+.discourse-no-touch .btn-default,
+.discourse-no-touch .select-kit .select-kit-header.btn-default {
+  color: var(--primary) !important;
+  box-shadow: 0 1px 3px oklab(0% 0 0 / 0.05);
+}
+
+.discourse-no-touch .btn-default.ai-new-question-button {
+  font-weight: 500;
+
+  &:not([disabled]):focus-visible,
+  &:not([disabled]):hover {
+    font-weight: 500;
+  }
+
+  &:active {
+    font-weight: 500;
+  }
+}
+
+.composer-actions-btn svg {
+  padding: 0 !important;
+}

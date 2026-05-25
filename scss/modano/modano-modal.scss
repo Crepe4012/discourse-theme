@@ -1,0 +1,9 @@
+.sidebar__edit-navigation-menu__footer,
+.dialog-footer,
+.d-modal__footer {
+  flex-direction: row-reverse;
+
+  .primary-actions {
+    flex-direction: row-reverse;
+  }
+}

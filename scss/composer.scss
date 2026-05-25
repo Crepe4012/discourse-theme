@@ -3,14 +3,15 @@
 #reply-control
   .select-kit.dropdown-select-box.composer-actions
   .select-kit-header {
-  border: 1px solid var(--tertiary-700);
+  //border: 1px solid var(--tertiary-700);
+  border: 1px solid var(--primary-400);
   background: var(--secondary);
 
-  &:hover {
-    .d-icon {
-      color: var(--accent-color);
-    }
-  }
+  //&:hover {
+  //  .d-icon {
+  //    color: var(--accent-color);
+  //  }
+  //}
 }
 
 #reply-control.hide-preview:not(.draft) {
@@ -57,8 +58,10 @@
   .btn:hover,
   .toolbar-popup-menu-options.is-expanded {
     .discourse-no-touch & {
-      background: var(--tertiary-very-low);
-      color: var(--accent-color);
+      //background: var(--tertiary-very-low);
+      background: var(--d-hover);
+      //color: var(--accent-color);
+      color: var(--primary);
 
       .d-icon {
         color: inherit;
@@ -99,7 +102,7 @@
     top: 6.5rem;
     padding: 0.25rem 0.75rem;
     background: var(--background-color);
-    color: var(--accent-color);
+    //color: var(--accent-color);
     border-radius: var(--d-border-radius-large);
   }
 

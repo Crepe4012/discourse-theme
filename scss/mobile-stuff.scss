@@ -4,7 +4,8 @@
 @include viewport.until(lg) {
   html,
   .d-header {
-    background-color: var(--d-content-background);
+    //background-color: var(--d-content-background);
+    background-color: var(--d-sidebar-background);
   }
 }
 

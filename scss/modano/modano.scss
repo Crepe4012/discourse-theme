@@ -1,0 +1,10 @@
+:root {
+  --space: 0.286rem !important;
+  --d-sidebar-vertical-gap: var(--space-1) !important;
+  --d-sidebar-width: 17rem !important;
+  --topic-width: var(--d-max-width);
+  --topic-body-width: calc(
+    var(--d-max-width) - var(--topic-body-width-padding) *
+      2 - var(--topic-avatar-width) - var(--space-6) * 2
+  );
+}

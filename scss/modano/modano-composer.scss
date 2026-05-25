@@ -1,0 +1,11 @@
+:root {
+  --reply-composer-height: 75vh;
+  --new-topic-composer-height: 75vh;
+}
+
+#reply-control {
+  .submit-panel,
+  .save-or-cancel {
+    flex-direction: row-reverse;
+  }
+}

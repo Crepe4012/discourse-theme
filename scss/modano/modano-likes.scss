@@ -1,0 +1,33 @@
+/* Hide likes from user summary/profiles */
+.top-section.most-liked-section {
+  display: none !important;
+}
+.stats-likes-given,
+.stats-likes-received {
+  display: none !important;
+}
+.top-section {
+  .replies-section,
+  .topics-section {
+    display: none !important;
+  }
+}
+
+/* Hide likes given from user activity navigation */
+.user-nav__activity-likes {
+  display: none !important;
+}
+
+/* Hide likes received from user notifications navigation */
+.user-nav__notifications-likes {
+  display: none !important;
+}
+
+/* Hide likes on about page */
+.about__activities-item.likes {
+  display: none !important;
+}
+
+#user-menu-button-likes {
+  display: none !important;
+}

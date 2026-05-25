@@ -8,10 +8,10 @@
   display: none;
 }
 
-@include viewport.from(md) {
-  .horizon-new-topic-button-enabled {
-    .list-controls .d-combo-button {
-      display: none;
-    }
-  }
-}
+//@include viewport.from(md) {
+//  .horizon-new-topic-button-enabled {
+//    .list-controls .d-combo-button {
+//      display: none;
+//    }
+//  }
+//}
